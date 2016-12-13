@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mql.shoppingcardemo.ScrollLinerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/forward_layout"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_product"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="0.5"
+                 />
+
+            <ImageView
+                android:id="@+id/iv_shopcar_product"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="hahahahahahhaahahahahahahahhahahahahaahahahahahahahhaahah"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_product_price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center|bottom"
+                        android:text="1231"
+                        android:textColor="#d11e1a"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/tv_reduce"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_gray"
+                        android:text="-"
+                        android:textColor="#888888"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_product_number"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="1"
+
+                        />
+
+                    <Button
+                        android:id="@+id/tv_add"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_gray"
+                        android:text="+"
+                        android:textColor="#888888"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@mipmap/view" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/delete_action"
+        android:layout_width="@dimen/delete_action_len"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#d11e1a"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="delete"
+        android:textColor="#FFF"
+        android:textSize="18dp" />
+
+</com.example.mql.shoppingcardemo.ScrollLinerLayout>
